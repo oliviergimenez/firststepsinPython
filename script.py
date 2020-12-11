@@ -40,3 +40,70 @@ elif False:
   print("ttttt")
 else:
   print("impossible")
+
+
+if True:
+  print("ok")
+else:
+  pass
+
+5 == 6
+
+5 != 6
+
+5 in [5, 6, 7]
+
+5 not in [5, 6, 7]
+
+not 5 == 6
+
+# loops
+tList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(tList)
+for iIndex in range(len(tList)):
+  tList[iIndex]+=1
+print(tList)
+
+tList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(tList)
+for iIndex in range(len(tList)):
+  tList[iIndex] = tList[iIndex] + 1
+print(tList)
+
+# supprime chiffres pairs
+tList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(tList)
+for iValue in tList:
+  if iValue%2==0:
+    tList.remove(iValue)
+print(tList)
+
+# use keyword continue to pass an iteration
+# and keyword break to quit the block
+
+# functions
+
+# my first function
+def Racine(iValue, iRacine):
+  print(iValue**(1/iRacine))
+Racine(4, 2)
+Racine(8, 3)
+
+# function with outputs
+def Racine(iValue, iRacine):
+  fReponse = iValue**(1/iRacine)
+  return fReponse 
+#  print(fReponse)
+
+stockage = Racine(4, 2)
+print(stockage)
+
+# arguments by default
+def Racine(iValue = 4, iRacine = 2):
+  fReponse = iValue**(1/iRacine)
+  return fReponse 
+#  print(fReponse)
+
+stockage = Racine()
+print(stockage)
+
