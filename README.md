@@ -1,6 +1,6 @@
 # My notes on a day of training in Python
 
-Course taught by Aymeric Antoine-Lorquin, organised [Montpellier Biostat network](https://groupes.renater.fr/wiki/montpellier-biostat/index)
+Course taught by Aymeric Antoine-Lorquin, organised [Montpellier Biostat network](https://groupes.renater.fr/wiki/montpellier-biostat/index). The slides are [here](/doc/Python-Debutant.pdf).
 
 Some useful resources:
 * [Beginner course](https://www.pierre-giraud.com/python-apprendre-programmer-cours/introduction/) by Pierre Giraud
