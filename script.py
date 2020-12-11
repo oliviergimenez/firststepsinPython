@@ -107,3 +107,111 @@ def Racine(iValue = 4, iRacine = 2):
 stockage = Racine()
 print(stockage)
 
+# libraries
+
+import time # time.time
+import random # random.randint
+import sys
+import os # os.listdir
+# docs.python.org/fr/3/library
+
+# exercice jeu de bataille
+
+""" 
+On distribue les 52 cartes aux joueurs (peut se jouer à deux) qui les rassemblent en paquet devant eux. 
+Chacun tire la carte du dessus de son paquet et la pose sur la table.
+Celui qui a la carte la plus forte ramasse les autres cartes. 
+L'as est la plus forte carte, puis roi, dame, valet, 10, etc.
+Lorsque deux joueurs posent en même temps deux cartes de même valeur il y a "bataille". 
+Lorsqu'il y a "bataille" les joueurs tirent la carte suivante et la posent, face cachée, sur la carte précédente. 
+Puis ils tirent une deuxième carte qu'ils posent cette fois-ci face découverte et c'est cette dernière qui départagera les joueurs. 
+Le gagnant est celui qui remporte toutes les cartes.
+"""
+
+"""
+Créer un paquet de 52 cartes.
+Le partager équitablement de façon aléatoire entre deux joueurs.
+Faire s’affronter les deux joueurs.
+A chaque tour, chaque joueur pioche sa première carte. Le vainqueur emporte
+le pli et le place sous sa pioche. En cas d’égalité, une bataille a lieu (ajout
+d’une carte face cachée puis d’une carte face visible) jusqu’à ce qu’un
+vainqueur l’emporte.
+Le premier joueur à ne pas pouvoir piocher de carte a perdu.
+Le programme doit afficher :
+Le nombre du tour en cours
+Le nom des cartes jouées par chaque joueur (ou le fait qu’ils jouent une
+carte face cachée)
+Annoncer une bataille
+Signaler qui emporte le pli
+Donner le nom du vainqueur de la partie
+"""
+
+listeCartes = ["Deux", "Trois", "Quatre", "Cinq", "Six", "Sept", "Huit", "Neuf", "Dix", "Valet", "Reine", "Roi", "As"]
+listeCouleurs = ["de Pique", "de Trefle", "de Coeur", "de Carreau"]
+
+for i in listeCartes:
+  print(i)
+
+for i in listeCartes:
+  print(i)
+  for j in listeCouleurs:
+    print("\t..."+j)
+
+
+for i in listeCartes:
+  for j in listeCouleurs:
+    print(i+" "+j)
+
+# step 1
+def CreateDeck(listeCartes, listeCouleurs):
+  valeur = 0
+  paquet = {}
+  for i in listeCartes:
+    valeur = valeur + 1
+    for j in listeCouleurs:
+      nom = i + " " + j
+      paquet[nom] = valeur
+  return paquet
+#    print(i + " " + j + ":" + str(valeur))
+
+listeCartes = ["Deux", "Trois", "Quatre", "Cinq", "Six", "Sept", "Huit", "Neuf", "Dix", "Valet", "Reine", "Roi", "As"]
+listeCouleurs = ["de Pique", "de Trefle", "de Coeur", "de Carreau"]
+
+CreateDeck(listeCartes, listeCouleurs)
+
+# step 2
+
+def Shuffle(listeCartes, listeCouleurs):
+
+
+
+
+
+
+deck = []
+for i in listeCartes:
+  for j in listeCouleurs:
+    nom_carte = i + " " + j
+    deck.append(nom_carte)
+deck_shuffled = random.sample(deck, len(deck))
+
+
+
+
+Shuffle(listeCartes, listeCouleurs)
+
+jeu = []
+for i in range(listeCartes):
+  for j in listeCouleurs:
+    jeu[i, j] = i + " " + j
+
+
+def tire_carte(carte, couleur):
+  listeCartes = ["Deux", "Trois", "Quatre", "Cinq", "Six", "Sept", "Huit", "Neuf", "Dix", "Valet", "Reine", "Roi", "As"]
+  listeCouleurs = ["de Pique", "de Trefle", "de Coeur", "de Carreau"]
+  return "{} {}".format(listeCartes[carte], listeCouleurs[couleur])
+
+set_card_name(0, 3)
+
+def
+
